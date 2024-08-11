@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SD tech store</title>
+
+<!-- code for font -->
+ <!-- this link is used to introduce the desired  -->
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- code for font -->
+
+<!-- code for linking css file -->
+ <link rel="stylesheet" type = "text/css" href="css/style.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head> 
+<body>
+
+
+
+    <!-- header section -->
+    <header class="header">
+    <a href="#" class="logo" > <i class="fa fa-desktop" aria-hidden="true"></i>Computer Components </a>
+
+
+<nav class ="navbar"> 
+    <a href="#home">home</a>
+    <a href="#products">products</a>
+    <a href="#categories">categories</a>
+    <a href="#cart">cart</a>
+    
+</nav>
+
+<!-- icons section -->
+<div class="icons">
+
+<div class="fa fa-search" id="search-btn"></div>
+<a href="#cart" id="shoppingcartbtn">
+    <div class="fa fa-shopping-cart" id="cart-btn"></div>
+</a>
+<div class="fa fa-user" id="login-btn"></div></div>
+
+</div>
+
+<form class="search-form">
+<input type="search" id="search-box" placeholder="Search Here">
+<label for="search-box" class="fa fa-search"></label>
+</form>
+
+
+<form action="#" class="login-form">
+<h3>login now</h3>
+<input type="email" placeholder="Enter your email" class="box">
+<input type="password" placeholder="Enter your password" class="box">
+<p>Forget Your Password <a href="#"> Click Here</a></p>
+<p>Don't Have An Account <a href="#"> Create New</a></p>
+
+
+<input type="submit" value="Login Now" class="btn">
+</form>
+
+
+</form>
+
+    </header>
+    <!-- header section -->
+
+<!-- home section  -->
+<section class="home" id="home">
+<div class="content">
+<h3>Only the Best Computer components</h3>
+<h4 id="tagline">We offer the best computer components with the best prices and worldwide delivery</h4>
+<a href="#cart" class="btn">Order Now</a>
+</div> 
+</section>
+
+
+<!-- products section -->
+<section class="products" id="products">
+<h1 class="heading"> Products</h1>
+
+
+<div class="box-container">
+
+<div class="box">
+<img src="image/monitor1.png">
+<h3>Asus pro art display</h3>
+<p>$ 270 </p>
+<a href="#cart" class="btn">Order</a>
+</div>
+
+    <div class="box">
+    <img src="image/keyboard1.png">
+    <h3>Wooting 60HE</h3>
+    <p>$ 175 </p>
+    <a href="#cart" class="btn">Order</a>
+    </div>
+
+        <div class="box">
+        <img src="image/mouse.jpeg">
+        <h3>Corsair dark core</h3>
+        <p>$ 80 </p>
+        <a href="#cart" class="btn">Order</a>
+        </div>
+
+</div>
+</section>
+
+<!-- categories section -->
+<section class="categories" id="categories">
+    <h1 class="heading"> Categories</h1>
+    
+    
+    <div class="box-container">
+    
+    <div class="box">
+    <img src="image/manymonitors.jpg">
+    <h3>Monitors</h3>
+    <p>$200 - $1500 </p>
+    <a href="#cart" class="btn">Explore</a>
+    </div>
+    
+        <div class="box">
+        <img src="image/manykeyboard.png">
+        <h3>Keyboards</h3>
+        <p>$50 - $500 </p>
+        <a href="#cart" class="btn">Explore</a>
+        </div>
+    
+            <div class="box">
+            <img src="image/manymouse.png">
+            <h3>Mouse</h3>
+            <p>$25 - $200 </p>
+            <a href="#cart" class="btn">Explore</a>
+            </div>
+    
+    </div>
+    </section>
+    <script src="js/script.js"></script>
+
+<!-- cart section -->
+
+</body>
+<body>
+    <title>Cart</title>
+    <style>
+        .order-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+        .form-box, .summary-box {
+            width: 48%;
+            padding: 20px;
+           margin-top: -20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-color: rgb(100, 0, 128);
+            color: white;
+        }
+        .quantity-input {
+            display: flex;
+            align-items: center;
+        }
+        .quantity-input input {
+            width: 50px;
+            text-align: center;
+        }
+        .heading {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="order-container">
+            <div class="form-box">
+                <h1 class="heading" id="cart-heading">Cart</h1>
+                <form id="orderForm" class="order-form">
+                    <section class="cart" id="cart">
+                        <h3 class="heading" id="productheading">Product Order form</h3>
+                    </section>
+                    <div class="form-group">
+                        <label for="category" id="yaaa">Select Category:</label>
+                        <select class="form-control" id="category" name="category">
+                            <option value="monitors">Monitors</option>
+                            <option value="keyboards">Keyboards</option>
+                            <option value="mouse">Mouse</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Select Product:</label>
+                        <select class="form-control" id="productdrop" name="product">
+                            <option value="asus-pro-art-display">Asus Pro Art Display</option>
+                            <option value="proart-display-pa169cdv">ProArt Display PA169CDV</option>
+                            <option value="wooting-60he">Wooting 60HE</option>
+                            <option value="wooting-80he">Wooting 80HE</option>
+                            <option value="corsair-dark-core">Corsair Dark Core</option>
+                            <option value="corsair-m75-air">Corsair M75 Air</option>
+                        </select>
+                    </div>
+                    <div class="form-group quantity-input">
+                        <label for="quantity" class="mr-3">Quantity:</label>
+                        <button type="button" class="btn btn-secondary btn-sm" id="decrease">-</button>
+                        <input type="number" class="form-control mx-2" id="quantity" name="quantity" value="1" min="1">
+                        <button type="button" class="btn btn-secondary btn-sm" id="increase">+</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryMessage" id="deliverymessage">Special Delivery Message:</label>
+                        <textarea class="form-control" id="deliveryMessagea" name="deliveryMessage" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="placeorderbtn">Place Order</button>
+                </form>
+            </div>
+            <div class="summary-box" id="orderResult">
+                <h2>Order Summary</h2>
+                <div id="summaryContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Increase quantity
+            $("#increase").click(function() {
+                let quantity = parseInt($("#quantity").val());
+                $("#quantity").val(quantity + 1);
+            });
+
+            // Decrease quantity
+            $("#decrease").click(function() {
+                let quantity = parseInt($("#quantity").val());
+                if (quantity > 1) {
+                    $("#quantity").val(quantity - 1);
+                }
+            });
+
+            $("#orderForm").submit(function(event) {
+                event.preventDefault();
+                const formData = $("#orderForm").serializeArray();
+                const orderData = {};
+                formData.forEach(function(input) {
+                    orderData[input.name] = input.value;
+                });
+
+                // Display the order summary
+                $("#summaryContent").html("");
+                $("#summaryContent").append(`<p><strong>Category:</strong> ${orderData.category}</p>`);
+                $("#summaryContent").append(`<p><strong>Product:</strong> ${orderData.product}</p>`);
+                $("#summaryContent").append(`<p><strong>Quantity:</strong> ${orderData.quantity}</p>`);
+                $("#summaryContent").append(`<p><strong>Special Delivery Message:</strong> ${orderData.deliveryMessage}</p>`);
+                
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+    
